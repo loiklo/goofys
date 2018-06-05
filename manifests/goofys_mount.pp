@@ -31,7 +31,7 @@ define goofys::goofys_mount(
 
   mount { $mount_point:
     ensure   => $ensure,
-    device   => "/usr/sbin/goofys#${bucket_name}",
+    device   => "/opt/goofys/goofys#${bucket_name}",
     options  => $options,
     # Fixed params for Goofys
     fstype   => 'fuse',
