@@ -36,13 +36,9 @@ This module requires the installation of puppetlabs-stdlib and puppetlabs-mount_
 
 Prior mounting the S3 bucket, Goofys requires to have the /root/.aws/credentials filled with an account with proper right on the S3 bucket. This is done in the module github/loiklo/puppet-awscredentials.
 
-### Beginning with goofys
+### Beginning with puppet-goofys
 
-The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
-
-## Usage
-
-1. On the puppet master:
+On the puppet master:
 
 ```bash
 cd /etc/puppetlabs/code/modules
@@ -50,9 +46,11 @@ git clone https://github.com/loiklo/puppet-awscredentials.git awscredentials
 git clone https://github.com/loiklo/puppet-goofys.git goofys
 ```
 
-2. Subscribe your instance to the puppet module
+## Usage
 
-3. Fill the hiera file
+1. Subscribe your instance to the puppet module
+
+2. Fill the hiera file
 
 ```yaml
 ---
