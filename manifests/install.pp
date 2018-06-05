@@ -16,6 +16,8 @@ class goofys::install (
 
   $goofys_tmp = '/tmp/goofys_part'
 
+  ensure_package({'wget' => { 'ensure' => 'present'}})
+
   if $goofys_version == 'latest' {
     $goofys_url = 'https://bit.ly/goofys-latest'
   } else {
